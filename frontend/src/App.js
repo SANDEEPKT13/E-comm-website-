@@ -7,6 +7,9 @@ import ShopCategory from './Pages/ShopCategory';
 import Loginsignup from './Pages/Loginsignup';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
+import Footer from './Components/Footer/Footer';
+
+
 
 
 function App() {
@@ -15,6 +18,7 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route path='/shooper' element={<Shop/>}/>
         <Route path='/' element={<Shop/>}/>
         <Route path='/men' element={<ShopCategory category="men"/>}/>
         <Route path='/women' element={<ShopCategory category="women" />}/>
@@ -25,6 +29,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Loginsignup/>}/>
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

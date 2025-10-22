@@ -8,10 +8,10 @@ const Item = (props) => {
         <p>{props.name}</p>
         <div className="item-prices">
             <div className="item-priices-new">
-                {props.new_prices}
+                ${props.new_price}
             </div>
             <div className="item-price-old">
-                {props.old_prices}
+                ${props.old_price}
             </div>
         </div>
     </div>
@@ -19,3 +19,18 @@ const Item = (props) => {
 }
 
 export default Item
+
+
+// const Item = ({ name, image, new_price, old_price }) => {
+//   return (
+//     <div className='item'>
+//       <img src={image} alt=''/>
+//       <p>{name}</p>
+//       <div className="item-prices">
+//         <div className="item-prices-new">${new_price}</div>
+//         <div className="item-prices-old">${old_price}</div>
+//       </div>
+//     </div>
+//   );
+// };
+
