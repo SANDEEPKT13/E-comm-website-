@@ -10,9 +10,13 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="nav-logo">
-        <img src={logo} alt="" />
-        <p onClick={()=>{setMenu("shop")}}>
-          <Link style={{textDecoration:'none'}} to='/'>SHOOPER</Link> {menu === "shooper" && <hr />}
+         {/* ✅ Wrap the logo in a Link so clicking it goes to "/" */}
+        <Link to='/'>
+          <img src={logo} alt="logo" className="clickable-logo" />
+        </Link>
+        
+        <p className='brand-name'>
+          <Link to='/' style={{textDecoration:'none'}}>SHOOPER</Link>
         </p>
       </div>
       <ul className="nav-menu">

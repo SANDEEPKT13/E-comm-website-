@@ -91,3 +91,14 @@
     background: red;
     color: white;
 }
+
+.brand-name a {
+  color: #171717; /* fixed color */
+  font-weight: 600;
+  font-size: 38px;
+  pointer-events: auto;
+}
+
+.brand-name a:hover {
+  color: #171717; /* stays same on hover */
+}
