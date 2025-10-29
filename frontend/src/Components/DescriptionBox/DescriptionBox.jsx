@@ -13,9 +13,7 @@ const DescriptionBox = () => {
         <p>
             An e-commerce (electronic commerce) website is an online platform that allows businesses and individuals to buy and sell products or services over the internet. It provides users with features like product listings, shopping cart, payment gateway, and order tracking.
         </p>
-        <p>
-            
-        </p>
+
       </div>
     </div>
   )
