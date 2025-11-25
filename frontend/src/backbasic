@@ -1,0 +1,72 @@
+(base) PS C:\Users\andeep Kumar\Desktop\E-COMM\backend> npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (backend)
+version: (1.0.0)                                                                                                                                                 
+description:                                                                                                                                                     
+entry point: (index.js)                                                                                                                                          
+test command:                                                                                                                                                    
+git repository:                                                                                                                                                  
+keywords:                                                                                                                                                        
+author:                                                                                                                                                          
+license: (ISC)                                                                                                                                                   
+type: (commonjs)                                                                                                                                                 
+About to write to C:\Users\andeep Kumar\Desktop\E-COMM\backend\package.json:
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+Is this OK? (yes)
+
+(base) PS C:\Users\andeep Kumar\Desktop\E-COMM\backend> npm install express jsonwebtoken
+
+added 81 packages, and audited 82 packages in 7s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+(base) PS C:\Users\andeep Kumar\Desktop\E-COMM\backend> npm install mongoose
+
+added 17 packages, and audited 99 packages in 7s
+
+17 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+(base) PS C:\Users\andeep Kumar\Desktop\E-COMM\backend> npm install multer
+
+added 18 packages, and audited 117 packages in 4s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+(base) PS C:\Users\andeep Kumar\Desktop\E-COMM\backend> npm install cors
+
+added 1 package, and audited 118 packages in 3s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+(base) PS C:\Users\andeep Kumar\Desktop\E-COMM\backend> 
