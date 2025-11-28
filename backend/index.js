@@ -179,6 +179,25 @@ app.post("/addproduct", async (req, res) => {
 
 
 
+// creating api for deleting products
+app.post('/removeproduct',async(req,res)=>{
+    await Product.findOneAndDelete({id:req.body.id});
+    console.log("product removed");
+    res.json({
+        success:true,
+        name:req.body.name
+    })
+})
+
+
+
+// creating api for getting all products
+
+app.get('/allproducts',async(req,res)=>{
+    let products = await Product.find({});
+    console.log("All products are fetched ");
+    res.send(products);
+})
 
 app.listen(port,(error)=>{
     if(!error) {
@@ -187,3 +206,33 @@ app.listen(port,(error)=>{
         console.log("error :"+error);
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Multer is a Node.js middleware that helps you upload files to your server.
+// It works with Express and makes handling file uploads easy.
+// Why do we need Multer?
+// Normally, when you send files from frontend (like images), they come as:
+// multipart/form-data
+// not JSON
+// not readable by Express
+// Express cannot understand file data by itself.
+// 🔥 Multer comes in between and converts the uploaded file into something your backend can use.
+
+
+
+
